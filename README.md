@@ -1,0 +1,19 @@
+# Ames
+
+## Domain
+This problem is drawn from the analysis of housing data.
+
+## Problem Statement
+Given certain information about houses sold in Ames, IA, we will use supervised learning to develop a linear regression model that can predict the selling price of a home.
+
+## Dataset & Inputs
+The dataset contains information from the Ames Assessor's Office used in computing assessed values for individual residential properties sold in Ames, IA from 2006 to 2010. Kaggle did some data cleaning to host a competition based on modeling and not data preparation.  
+
+## Solution Statement
+A solution to this problem will be a linear regression model with an L1-penalty, a lasso model. 
+
+## Benchmark Model
+Given that we seek a regression model, a good naive benchmark would be to use either the mean or the median of the wages for the dataset.
+
+## Evaluation Metrics
+Given that this is a regression task, we can measure the success of our model using the $R^{2}$ metric. 
