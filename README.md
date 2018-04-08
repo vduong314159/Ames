@@ -1,5 +1,16 @@
 # Ames
 
+## Skills Used
+Python (SciKit Learn, Numpy, Pandas, etc.)  
+Jupyter notebooks  
+Statistics  
+Linear Algebra  
+Data Transformation  
+Data Normalization  
+Regression Modeling (e.g. Ordinary Least Squares, LASSO, Ridge, Decision Tree Regression, Support Vector Machines)  Principle Component Analysis  
+Data Visualization  
+Clustering Models (eg K-Nearest Neighbors)
+
 ## Domain
 This problem is drawn from the analysis of housing data.
 
