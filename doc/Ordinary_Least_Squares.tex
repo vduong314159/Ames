@@ -1,0 +1,69 @@
+\documentclass{article}
+\title{Ordinary Least Squares (OLS) Linear Regression}
+\author{Vivian Duong}
+\date{April 9, 2018}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fullpage}
+\usepackage{amsthm}
+\usepackage[pdftex]{hyperref}
+\usepackage{soul}
+\usepackage{ulem}
+\usepackage{physics}
+%\newtheorem{definition}{Definition}
+
+\begin{document}
+\maketitle
+Ordinary least squares linear regression is linear regression using the method of least squares to estimate the parameters of a linear model. The method of least squares is a simple method, the first and probably only method, that students learn to estimate the parameters of a linear model. \newline
+The method of of least squares aims to estimate the parameters by minimizing (least) the square of the error ie the difference between the estimator and true value of the target/independent variable $ y - \hat{y}$
+
+We will look at the simplest case where there is only one independent variable. However, this is easily generalizable.
+
+\textbf{Assumptions:} \newline
+\begin{enumerate}
+	\item $\exists$ n samples; $n = sample size$
+	\item $y_{1}, ..., y_{n}$ are the target/response variables (are independent and identically distributed(iid))
+	\item $x_{1}, ..., x_{n}$ are the independent variables (independent not in the probabilistic sense) 
+	\item $\exists$ a linear model:  
+	\begin{equation} 
+	\vec{y} = A\vec{\beta} + \vec{\varepsilon}
+	\end{equation}
+	\newline
+	where $A = \left(\begin{array}{cc} 1 & x_1 \\ . & . \\ . & . \\ . & . \\ 1 & x_n \end{array} \right) $ and $\vec{\beta} = \left(\begin{array}{cc} \beta_0 \\ \beta_1 
+	\end{array} \right)$
+\end{enumerate}
+
+In OLS,
+\begin{equation}
+\hat{y} = \hat{\beta}_0 + \hat{\beta}_1x + \varepsilon 
+\end{equation}
+s.t. $\displaystyle \min_{\beta_0, \beta_1} ||\varepsilon||^2$
+
+$\beta_0, \beta_1$ st  $\displaystyle \min ||\varepsilon||^2: \min_{\beta_0, \beta_1} ||\varepsilon||^2$
+
+$ = \min_{\beta_0, \beta_1} ||\vec{y} - A\vec{\beta}||^2 $
+
+$ = \min_{\beta_0, \beta_1} \varSigma[y_i - (\beta_0 + \beta_1x_i)]^2$
+
+Recall, the min and max of a function is where slope = 0
+=> solve for $\beta_0$ and $\beta_1$ where
+\begin{equation}
+\pdv{\varepsilon}{\beta_0} = -2 \varSigma (y_i \beta_0 - \beta_1x_i) = 0
+\end{equation} and
+
+\begin{equation}
+\pdv{\varepsilon}{\beta_0} = -2 \varSigma (y_i \beta_0 - \beta_1x_i)x_i = 0
+\end{equation}
+
+After solving using algebra
+\begin{equation}
+	\hat{\beta_1}^{OLS} = \frac{\varSigma y_ix_i - n\bar{y}\bar{x}}{\varSigma x_i^ - n\bar{x}^2}
+\end{equation}
+and
+\begin{equation}
+\hat{\beta_0}^{OLS} = \bar{y} - \beta_1 \bar{x}
+\end{equation}
+notation: $\bar{x} = mean(x)$
+
+\end{document}
