@@ -29,4 +29,4 @@ A solution to this problem will be a linear regression model with an L1-penalty,
 Given that we seek a regression model, a good naive benchmark would be to use either the mean or the median of the wages for the dataset.
 
 ## Evaluation Metrics
-Given that this is a regression task, we can measure the success of our model using the $R^2$ metric. 
+Given that this is a regression task, we can measure the success of our model using the <a href="https://www.codecogs.com/eqnedit.php?latex=R^2" target="_blank"><img src="https://latex.codecogs.com/gif.latex?R^2" title="R^2" /></a> metric. 
