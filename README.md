@@ -1,6 +1,8 @@
 # Ames
 
-## Skills Used
+You can see my work[here](https://github.com/vduong314159/Ames_Iowa_Dataset/blob/master/ipynb/Ames-Lasso-Model.ipynb)
+
+## Skills/Tools Used
 Python (SciKit Learn, Numpy, Pandas, etc.)  
 Jupyter notebooks  
 Statistics  
