@@ -1,6 +1,6 @@
 # Ames
 
-You can see my final work[here](https://github.com/vduong314159/Ames_Iowa_Dataset/blob/master/ipynb/Ames-Lasso-Model.ipynb).
+You can see my final work [here](https://github.com/vduong314159/Ames_Iowa_Dataset/blob/master/ipynb/Ames-Lasso-Model.ipynb).
 
 ## Skills/Tools Used
 Python (SciKit Learn, Numpy, Pandas, etc.)  
